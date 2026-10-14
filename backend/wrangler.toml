@@ -1,0 +1,12 @@
+name = "ky-ocr"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+# Exact origin of your deployed site (no trailing slash, no path).
+# For GitHub Pages at https://yourname.github.io/ky/ the origin is https://yourname.github.io
+ALLOWED_ORIGIN = "https://YOUR-GITHUB-USERNAME.github.io"
+# MODEL = "claude-haiku-5-5"
+
+# Secret (do not put it in this file):  npx wrangler secret put ANTHROPIC_API_KEY
+# Intentionally no KV, D1, R2 or Durable Object bindings: nothing is stored.
